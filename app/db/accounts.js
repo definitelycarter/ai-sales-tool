@@ -6,11 +6,14 @@ export function getAccounts() {
         SELECT
           a.*,
           COUNT(at.trigger) as "trigger_count",
-          GROUP_CONCAT(at.trigger, ',') AS "triggers"
+          GROUP_CONCAT(at.trigger, ',') AS "triggers",
+          COUNT(distinct pn.id) as "private_note_count"
         FROM
           accounts a
         LEFT JOIN
           triggers at ON a.id = at.account_id
+        LEFT JOIN
+          private_notes pn ON a.id = pn.account_id
         GROUP BY
           a.id;
       `;

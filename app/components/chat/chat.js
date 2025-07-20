@@ -83,7 +83,7 @@ export function ChatBadge() {
 
             {isChatOpen && (
                 <div
-                    style={{ width: 400 }}
+                    style={{ width: 400, height: 600 }}
                     className="fixed bottom-24 right-5 h-96 bg-white rounded shadow-xl flex flex-col overflow-hidden border border-gray-200"
                 >
                     <div

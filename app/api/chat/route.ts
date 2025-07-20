@@ -32,7 +32,7 @@ const systemPrompt = {
     - Whenever you snooze or reject an account also add that reason as a private note.
     - My company name is Algoworks
     - Anytime you reference an account name form it into a link pointing to http://localhost:3000/account/:id (no hash) and make the name bold where the id is the account id
-    - Anytime you craft a message for an email or introduction, find the private notes by the account and reference those.
+    - Anytime you craft a message for an email or introduction, you must reference the private notes by the account ID.
   `,
 };
 

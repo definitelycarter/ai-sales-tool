@@ -1,8 +1,4 @@
-# Client Assistant for Sales & BI
-
-## Problem Statement
-
-Business and sales teams often work with fragmented tools that lack a holistic view of clients, markets, and opportunities. A solution is needed to build a unified assistant that delivers company insights, financial analysis, industry trends, and real-time sales support to drive informed decision-making and performance.
+# Client Assistant for Sales
 
 ## Problem
 
