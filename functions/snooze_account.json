@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "name": "snooze_account",
+    "type": "function",
+    "description": "changes the status of an account from active to snooze",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "description": "The ID of the account",
+                "type": "number"
+            },
+            "reason": {
+                "description": "The reason for for snoozing the account",
+                "type": "string"
+            },
+            "snooze_until": {
+                "description": "The date to put the account back into active status",
+                "type": "string"
+            }
+        },
+        "additionalProperties": false,
+        "required": ["id", "reason", "snooze_until"]
+    }
+}

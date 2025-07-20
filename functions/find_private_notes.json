@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "name": "find_private_notes",
+    "type": "function",
+    "description": "Ability to get the private notes by the account id",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "description": "The ID of the account",
+                "type": "number"
+            }
+        },
+        "additionalProperties": false,
+        "required": ["id", "content"]
+    }
+}

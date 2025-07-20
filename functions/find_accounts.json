@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "name": "find_accounts",
+    "type": "function",
+    "description": "Ability to get the accounts by the account's status",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "status": {
+                "description": "The status of the account",
+                "type": "string",
+                "enum": ["active", "snoozed", "rejected"]
+            },
+            "product_classification": {
+                "description": "The product classification or value based priority.",
+                "type": "string",
+                "enum": ["Gold", "Silver", "Bronze"]
+            },
+            "product_recommendation": {
+                "description": "A product recommendation of an account.",
+                "type": "string",
+                "enum": [
+                    "HR-Pro upgrade",
+                    "HRO-PEO",
+                    "Health and Benefits",
+                    "INS - Workers Compensation",
+                    "Retirement Services - 401k",
+                    "Retirement Services - Simple IRA",
+                    "TLM"
+                ]
+            }
+        },
+        "additionalProperties": false,
+        "required": ["status"]
+    }
+}

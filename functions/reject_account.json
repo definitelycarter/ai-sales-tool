@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "name": "reject_account",
+  "type": "function",
+  "description": "changes the status of an account from active to reject",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "The ID of the account",
+        "type": "number"
+      },
+      "reason": {
+        "description": "The reason for rejecting the account",
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "reason"
+    ]
+  }
+}

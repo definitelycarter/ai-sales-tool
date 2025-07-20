@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "name": "add_private_note",
+    "type": "function",
+    "description": "Ability to add a private note by the account id",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "description": "The ID of the account",
+                "type": "number"
+            },
+            "content": {
+                "description": "The content of the note provided by the user",
+                "type": "string"
+            }
+        },
+        "additionalProperties": false,
+        "required": ["id", "content"]
+    }
+}
